@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+    <style>
+        #circle {
+            width: 100px;
+            height: 100px;
+            border:2px solid black;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="circle"></div>
+
+<button id="red" onclick="changeColor('red')">Red</button>
+<button id="green" onclick="changeColor('green')">Green</button>
+<button id="blue" onclick="changeColor('blue')">Blue</button>
+
+<script>
+    function changeColor(color) {
+        document.getElementById('circle').style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>
